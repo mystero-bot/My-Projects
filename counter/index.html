@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Counter</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Counter</h1>
+            <span id="value">0</span>
+            <div class="button-container">
+                <button class="btn decrease btn-D">Decrease</button>
+                <button class="btn reset">Reset</button>
+                <button class="btn increase btn-I">Increase</button>
+            </div>
+            <div>
+                <button class="auto-btn js-auto-decrease btn-D">Auto Decrease</button>
+                <button class="auto-btn js-auto-increase btn-I">Auto Increase</button>
+            </div>
+            <p>Auto-Increase Timer: <span id="inc-timer">0s</span></p>
+            <p>Auto-Decrease Timer: <span id="dec-timer">0s</span></p>
+
+            <span class="counter-speed">counter-speed</span>
+
+            <!-- Optional: Speed dropdown -->
+            <select id="speed-select">
+            <option value="1000">1s</option>
+            <option value="500">0.5s</option>
+            <option value="250">0.25s</option>
+            </select>
+
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>

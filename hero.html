@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let programmer = {
+            name: 'John',
+            preferredLanguage: 'Javascript',
+            witeCode: () => {
+                console.log(`${this.name} writes ${this.preferredLanguage} code.`);
+            },
+            drinkCoffe() {
+                console.log(`${this.name} drinks coffee`)
+            }
+               
+        };
+
+        programmer.witeCode();
+        programmer.drinkCoffe();
+
+        const groceryItem = {
+            name: 'Apple',
+            quantity: 5,
+            display() {
+                console.log(`${this.quantity} x ${this.name}`)
+            }
+        };
+
+        groceryItem.display();
+
+        function createProgrammer(name, preferredLanguage) {
+            return {
+                name,
+                preferredLanguage,
+                witeCode: function() {
+                    console.log(`${this.name} writes ${this.preferredLanguage} code.`);
+                },
+                drinkCoffe() {
+                    console.log(`${this.name} drinks Asana`)
+                }
+
+            }
+        }
+
+        const newProgrammer = createProgrammer("Alice", "Python")
+        newProgrammer.witeCode();
+        newProgrammer.drinkCoffe();
+
+        function groceryList(name, quantity) {
+            return {
+                name,
+                quantity,
+                display() {
+                    console.log(`${this.quantity} x ${this.name}`)
+                }
+            }
+        }
+
+        // construtor property. using the (this).
+        const newGrocery = groceryList('Apple', 100)
+        newGrocery.display()
+
+        function GroceryItem(name, quantity) {
+            this.name = name;
+            this.quantity = quantity;
+            this.display = () => {
+                console.log(`${this.quantity} x ${this.name}`)
+            }
+        }
+
+        const newItem = new GroceryItem('Banana',100);
+        newItem.display()
+
+        function calculatePrice(groceryItem, price) {
+            return price * groceryItem.quantity
+        }
+        const performCalc = calculatePrice;
+        console.log(performCalc(newItem, 2))
+        
+
+
+    </script>
+</body>
+</html>

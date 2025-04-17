@@ -1,0 +1,103 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: arial;
+}
+
+
+.move-button {
+    border: 3px solid white;
+    border-radius: 65px;
+    width: 120px;
+    height: 120px;
+    margin-right: 16px;
+    margin-top: 10px;
+    background-image: linear-gradient(to top, #d72451 0%, #020302 100%);
+    background-color: transparent;
+    cursor: pointer;
+  
+}
+
+.move-button img {
+    width: 70%;
+    height: auto;
+}
+
+.move-icon {
+    height: 50px;
+}
+
+
+h1 {
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+
+.result {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 40px;
+    background-color: #fccf3a;
+    background-image: linear-gradient(to top, #ea5a6f 0%, #de791e 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+
+}
+
+.move {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 30px;
+    background-color: #fccf3a;
+    background-image: linear-gradient(to top, #ea5a6f 0%, #de791e 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+
+}
+
+.score {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: #fccf3a;
+    background-image: linear-gradient(to top, #ea5a6f 0%, #de791e 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.reset-button {
+   border: none;
+   width: 100px;
+   border-radius: 20px;
+   font-size: 20px;
+   padding: 8px 15px;
+   cursor: pointer;
+   background-image: linear-gradient(to top, #ea5a6f 0%, #de791e 100%);
+}
+
+.auto-play {
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 8px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-image: linear-gradient(to top, #ea5a6f 0%, #de791e 100%);
+}
+
